@@ -184,7 +184,7 @@ main .player-name-content h3 span {
 {
     .all-quizes{
         grid-template-columns: 1fr;
-        width: 40%;
+        width: 50%;
     }
 }
 
