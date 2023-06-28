@@ -21,11 +21,22 @@ header {
     color: white;
 }
 
-header svg {
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
-/* Initial site's content */
+.redes-sociais a:hover path {
+    fill: #000000;
+}
+
 .player-name {
     display: flex;
     align-items: center;

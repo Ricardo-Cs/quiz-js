@@ -17,4 +17,4 @@ form.addEventListener('submit', (event) => {
     
     localStorage.setItem("player", inputName.value);
     window.location = "./pages/quizes.html";
-});
+}); 
