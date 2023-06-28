@@ -61,7 +61,7 @@ header svg {
     grid-template-columns: 3fr 1fr;
 }
 
-#start-quiz {
+.login-button{
     background-color: var(--primary-color-alternative);
     border: 2px solid #000000;
     border-top-right-radius: 5px;
@@ -70,7 +70,7 @@ header svg {
     cursor: pointer;
 }
 
-#start-quiz:hover {
+.login-button:hover {
     background-color: var(--primary-color-hover);
 }
 
@@ -88,3 +88,11 @@ header svg {
     padding: 0.7rem;
 }
 
+.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    background-color: gray;
+}
