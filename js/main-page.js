@@ -5,7 +5,7 @@ const startQuizDiv = document.querySelectorAll(".quiz");
 playerName.innerHTML = localStorage.getItem("player");
 
 const startQuiz = (quizNumber) => {
-    window.location = `./quiz.html?=${quizNumber}`;
+    window.location = `./quiz.html?quiz=${quizNumber}`;
 };
 
 startQuizButton[0].addEventListener('click', () => startQuiz(1));
