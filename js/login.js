@@ -16,5 +16,5 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     
     localStorage.setItem("player", inputName.value);
-    window.location = "./pages/quizes.html";
+    window.location = "./pages/main.html";
 }); 
