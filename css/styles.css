@@ -37,7 +37,7 @@ header {
     fill: #000000;
 }
 
-.player-name {
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ header {
     padding: 1rem;
 }
 
-.player-name .player-name-content {
+main .player-name-content {
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -57,12 +57,12 @@ header {
     box-shadow: 1px 1px 25px rgb(54, 54, 54);
 }
 
-.player-name .player-name-content h3 {
+main .player-name-content h3 {
     font-size: var(--font-size-3xl);
     text-align: center;
 }
 
-.player-name .player-name-content h3 span {
+main .player-name-content h3 span {
     font-size: var(--font-size-4xl);
     color: var(--primary-color-alternative);
 }
@@ -106,4 +106,104 @@ header {
 
 .disabled:hover {
     background-color: gray;
+}
+
+/* Main Page */
+.main-page {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main-page-title span{
+    color: var(--color-5);
+}
+
+.all-quizes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: start;
+    width: 60%;
+}
+
+.quiz {
+    background-color: var(--color-3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.quiz:hover {
+    transform: scale(1.03); 
+}
+
+.quiz h4 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-bold);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quiz p {
+    font-size: var(--font-size-md);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quiz button {
+    background-color: #fff;
+    border: 1px solid #000000;
+    font-family: inherit;
+    font-weight: var(--font-semibold);
+    border-radius: 4px;
+    width: 100px;
+    padding: 5px;
+    margin: auto auto 0 auto;
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quiz button:hover {
+    transform: scale(1.05);
+}
+
+.quiz-img {
+    width: 100%;
+    height: 60%;
+}
+
+@media (max-width: 870px)
+{
+    .all-quizes{
+        grid-template-columns: 1fr;
+        width: 40%;
+    }
+}
+
+@media (max-width: 690px) {
+    .quiz h4 {
+        font-size: var(--font-size-md);
+    }
+
+    .quiz p {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-page-title {
+        font-size: var(--font-size-xl);
+    }
+    .quiz button {
+        width: 90px;
+        font-size: var(--font-size-sm);
+    }
 }
