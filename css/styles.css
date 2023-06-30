@@ -306,3 +306,7 @@ main .player-name-content h3 span {
 .quiz-options span.incorrect {
     background-color: red;
 }
+
+.finish-quiz-content {
+    display: none;
+}
