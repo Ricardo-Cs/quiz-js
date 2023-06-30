@@ -274,7 +274,8 @@ main .player-name-content h3 span {
 @media (max-width: 600px) {
 
     .quiz-options span {
-        width: 500px;
+        width: 350px;
+        padding: 3px;
     }
 
     .quiz-question h2 {
