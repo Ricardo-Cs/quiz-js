@@ -240,11 +240,21 @@ main .player-name-content h3 span {
     font-weight: var(--font-semibold);
     width: 750px;
     border-radius: 5px;
-    transition: 0.3s;
+    animation: quadrodeperguntasanimation 1s forwards;
 }
 
+/* @keyframes quadrodeperguntasanimation {
+    from { margin-left:-100%;}
+    to { margin-left: 0;}
+} */
+
+/* .quiz-options span.animation {
+    animation: hover-animation 0.3s forwards;
+} */
+
 .quiz-options span:hover {
-    box-shadow: inset 750px 0 0 0 #ff96ad;
+    background-color: #ff96ad;
+    transition: .2s;
 }
 
 .quiz-options span::before {
@@ -267,4 +277,12 @@ main .player-name-content h3 span {
 
 .quiz-options span[option-4]::before {
     content: "D)";
+}
+
+.quiz-options span.correct {
+    background-color: green;
+}
+  
+.quiz-options span.incorrect {
+    background-color: red;
 }
