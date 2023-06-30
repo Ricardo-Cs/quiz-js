@@ -21,6 +21,11 @@ header {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .redes-sociais {
     display: flex;
     align-items: center;
@@ -206,4 +211,60 @@ main .player-name-content h3 span {
         width: 90px;
         font-size: var(--font-size-sm);
     }
+}
+
+/* Quiz page */
+
+.main-quiz {
+    align-items: flex-start;
+}
+
+.quiz-question h2 {
+    font-size: var(--font-size-2xl);
+    margin-top: 80px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.quiz-options span {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-semibold);
+    width: 750px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.quiz-options span:hover {
+    box-shadow: inset 750px 0 0 0 #ff96ad;
+}
+
+.quiz-options span::before {
+    margin-right: 10px;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-bold);
+}
+
+.quiz-options span[option-1]::before {
+    content: "A)";
+}
+
+.quiz-options span[option-2]::before{
+    content: "B)";
+}
+
+.quiz-options span[option-3]::before {
+    content: "C)";
+}
+
+.quiz-options span[option-4]::before {
+    content: "D)";
 }
