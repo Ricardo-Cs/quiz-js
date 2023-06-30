@@ -240,17 +240,7 @@ main .player-name-content h3 span {
     font-weight: var(--font-semibold);
     width: 750px;
     border-radius: 5px;
-    animation: quadrodeperguntasanimation 1s forwards;
 }
-
-/* @keyframes quadrodeperguntasanimation {
-    from { margin-left:-100%;}
-    to { margin-left: 0;}
-} */
-
-/* .quiz-options span.animation {
-    animation: hover-animation 0.3s forwards;
-} */
 
 .quiz-options span:hover {
     background-color: #ff96ad;
@@ -261,6 +251,35 @@ main .player-name-content h3 span {
     margin-right: 10px;
     font-size: var(--font-size-lg);
     font-weight: var(--font-bold);
+}
+
+@media (max-width: 870px) {
+
+    .quiz-options span {
+        width: 580px;
+    }
+}
+
+@media (max-width: 690px) {
+    .quiz-options span {
+        font-size: var(--font-size-sm);
+        padding: 5px;
+    }
+
+    .quiz-question h2 {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .quiz-options span {
+        width: 500px;
+    }
+
+    .quiz-question h2 {
+        font-size: var(--font-size-md);
+    } 
 }
 
 .quiz-options span[option-1]::before {
