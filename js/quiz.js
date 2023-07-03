@@ -34,11 +34,16 @@ const checkAnswer = (selectedOption) => {
 const getCorrectAnswer = () => {
     if (quizParams === "1") {
       return quizData.programming[currentQuestion].answer;
-    } else if (quizParams === "2") {
+    }
+    
+    if (quizParams === "2") {
       return quizData.conhecimentos[currentQuestion].answer;
-    } else if (quizParams === "3") {
+    } 
+    
+    if (quizParams === "3") {
       return quizData.games[currentQuestion].answer;
-    } else if (quizParams === "4") {
+    } 
+    if (quizParams === "4") {
       return quizData.science[currentQuestion].answer;
     }
   
@@ -88,19 +93,23 @@ const mostResults = () => {
     mostAnswers.innerHTML = correct;
 
     if(correct <= 3) {
-      status.innerHTML = "Ruim"
+      status.innerHTML = "Ruim";
     }
 
     if (correct >= 4 && correct <= 6) {
-      status.innerHTML = "Aceitável"
+      status.innerHTML = "Aceitável";
     }
 
     if (correct >= 7 && correct <= 8) {
-      status.innerHTML = "Bom"
+      status.innerHTML = "Bom";
     }
 
-    if (correct >= 9 && correct <= 10) {
-      status.innerHTML = "Ótimo"
+    if (correct == 9) {
+      status.innerHTML = "Ótimo";
+    }
+
+    if (correct == 10) {
+      status.innerHTML = "Perfeito";
     }
 }
 
@@ -129,6 +138,7 @@ function loadQuestion() {
       if(quizData.conhecimentos[currentQuestion]) {
           quizQuestion.innerHTML = quizData.conhecimentos[currentQuestion].question;
           loadOptions(quizOptions, quizData, "conhecimentos");
+          return true;
         } else {
           return mostResults();
         }
@@ -138,6 +148,7 @@ function loadQuestion() {
       if(quizData.games[currentQuestion]) {
         quizQuestion.innerHTML = quizData.games[currentQuestion].question;
         loadOptions(quizOptions, quizData, "games");
+        return true;
       } else {
         return mostResults();
       }
@@ -148,6 +159,7 @@ function loadQuestion() {
       if(quizData.science[currentQuestion]) {
         quizQuestion.innerHTML = quizData.science[currentQuestion].question;
         loadOptions(quizOptions, quizData, "science");
+        return true;
       } else {
         return mostResults();
       }
