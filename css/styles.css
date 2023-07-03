@@ -247,6 +247,10 @@ main .player-name-content h3 span {
     transition: .2s;
 }
 
+.quiz-options span:focus {
+    background-color: #fff;
+}
+
 .quiz-options span::before {
     margin-right: 10px;
     font-size: var(--font-size-lg);
@@ -256,8 +260,11 @@ main .player-name-content h3 span {
 @media (max-width: 870px) {
 
     .quiz-options span {
-        background-color: #fff;
         width: 580px;
+    }
+
+    .quiz-options span:hover {
+        background-color: #fff;
     }
 }
 
@@ -275,10 +282,11 @@ main .player-name-content h3 span {
 @media (max-width: 600px) {
 
     .quiz-options span {
-        background-color: #fff;
         width: 350px;
         padding: 3px;
     }
+
+
 
     .quiz-question h2 {
         font-size: var(--font-size-md);
