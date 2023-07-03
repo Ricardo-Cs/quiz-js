@@ -256,6 +256,7 @@ main .player-name-content h3 span {
 @media (max-width: 870px) {
 
     .quiz-options span {
+        background-color: #fff;
         width: 580px;
     }
 }
@@ -274,6 +275,7 @@ main .player-name-content h3 span {
 @media (max-width: 600px) {
 
     .quiz-options span {
+        background-color: #fff;
         width: 350px;
         padding: 3px;
     }
