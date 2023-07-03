@@ -81,14 +81,54 @@ export const quizData = {
     ],
     games: [
         {
-            question: "Questão de jogos número 1",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 1
+            question: "Qual é o jogo mais vendido de todos os tempos?",
+            options: ["GTA 5", "Minecraft", "Super Mario Bros.", "Tetris"],
+            answer: "Minecraft"
         },
         {
-            question: "Questão de jogos número 2",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 2
+            question: "Qual é o jogo de tiro em primeira pessoa que popularizou o gênero e foi lançado em 1993?",
+            options: ["Doom", "Call of Duty", "Black", "Medal of Honor"],
+            answer: "Doom"
+        },
+        {
+            question: "Qual é o nome da empresa responsável pela série de jogos 'Grand Theft Auto'?",
+            options: ["Activision", "Konami", "Capcom", "Rockstar Games"],
+            answer: "Rockstar Games"
+        },
+        {
+            question: "Qual é o nome da organização paramilitar fictícia do jogo 'Resident Evil'?",
+            options: ["Biohazard Alliance", "Aegis Corporation", "Nemesis Syndicate", "Umbrella Corp."],
+            answer: "Umbrella Corp."
+        },
+        {
+            question: "Qual é o nome do personagem principal da série de jogos 'Uncharted'?",
+            options: ["Solid Snake", "Nathan Drake", "Joel Miller", "Cloud Strife"],
+            answer: "Nathan Drake"
+        },
+        {
+            question: "Qual é o nome do estúdio de desenvolvimento responsável pela série 'The Elder Scrolls'?",
+            options: ["Activision", "From Software", "Bethesda Game Studios", "Toei"],
+            answer: "Bethesda Game Studios"
+        },
+        {
+            question: "Qual é o nome do jogo de ação e aventura lançado em 2010 que se passa no Velho Oeste?",
+            options: ["Red Dead Redemption", "Wild West Conquest", "Frontier Wars", "Outlaws of the West"],
+            answer: "Red Dead Redemption"
+        },
+        {
+            question: "Qual é o nome da espada lendária encontrada na série de jogos 'The Legend of Zelda'?",
+            options: ["Master Sword", "Excalibur", "Sword of Destiny", "Blade of Legends"],
+            answer: "Master Sword"
+        },
+        {
+            question: "Qual é o nome do protagonista da série de jogos 'Halo'?",
+            options: ["Master Chief", "Ethan Walker", "Max Steel", "Alex Ryder"],
+            answer: "Master Chief"
+        },
+        {
+            question: "Nos jogos de Pokémon, qual é o pokémon número 1 da Pokédex (Lista de todos os pokémons existentes)",
+            options: ["Bulbasauro", "Pikachu", "Charmander", "Abra"],
+            answer: "Charmander"
         }
     ],
     science: [
