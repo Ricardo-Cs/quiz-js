@@ -40,7 +40,7 @@ export const quizData = {
             question: "O que é o operador ternário em programação?",
             options: ["O operador ternário é um operador lógico que realiza operações booleanas entre dois valores.",
                 "O operador ternário é um operador matemático que realiza cálculos com três operandos.",
-                "O operador ternário é um operador condicional que avalia uma expressão booleana e retorna um valor com base nessa avaliação.",
+                "O operador ternário é um operador matemático que realiza uma comparação entre duas funções anônimas.",
                 "O operador ternário é um recurso para tomada de decisões com objetivo similar ao do if/else, mas que é codificado em apenas uma linha."],
             answer: "O operador ternário é um recurso para tomada de decisões com objetivo similar ao do if/else, mas que é codificado em apenas uma linha."
         },

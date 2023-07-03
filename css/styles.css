@@ -317,6 +317,39 @@ main .player-name-content h3 span {
     background-color: red;
 }
 
-.finish-quiz-content {
+.finish-quiz {
     display: none;
+    background-color: #fff;
+    padding: 1.2rem;
+    width: 300px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 1px 1px 25px rgb(54, 54, 54);
+}
+
+.finish-quiz .finish-quiz-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.finish-quiz .finish-quiz-content h2 {
+    text-align: center;
+    color: var(--color-5);
+    font-weight: var(--font-bold);
+}
+
+.finish-quiz .finish-quiz-content p, .finish-quiz .finish-quiz-content span{
+    font-weight: var(--font-semibold);
+}
+
+.finish-quiz .finish-quiz-content #try-again {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 5px;
+    text-align: center;
+    width: 160px;
+    margin: 0 auto;
+    font-size: var(--font-size-sm);
+    border-radius: 5px;
 }

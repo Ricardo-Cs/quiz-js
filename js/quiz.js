@@ -1,5 +1,10 @@
 import { quizData } from "./questoes.js";
 
+const quizContent = document.querySelector(".quiz-content");
+const finishQuiz = document.querySelector(".finish-quiz");
+const status = document.querySelector("#status");
+const tryAgain = document.querySelector("#try-again")
+const mostAnswers = document.querySelector("#correct-answers")
 const quizQuestion = document.querySelector(".quiz-question h2");
 const quizOptions = document.querySelectorAll(".quiz-options span");
 const urlParams = new URLSearchParams(window.location.search);
@@ -16,13 +21,13 @@ const checkAnswer = (selectedOption) => {
       correct++;
       setTimeout(() => {
         selectedOption.classList.remove("correct");
-      }, 1500);
+      }, 1000);
     } else {
       selectedOption.classList.add("incorrect");
       wrong++
       setTimeout(() => {
         selectedOption.classList.remove("incorrect");
-      }, 1500);
+      }, 1000);
     }
   };
 
@@ -74,12 +79,34 @@ const optionClickHandler = (event) => {
         nextQuestion();
         enableOptionClick();
         // Habilitar novamente o clique nas opções
-      }, 1500);
+      }, 1000);
 };
 
 const mostResults = () => {
-    alert(`Você acertou ${correct} questões!`)
+    quizContent.style.display = "none";
+    finishQuiz.style.display = "block";
+    mostAnswers.innerHTML = correct;
+
+    if(correct <= 3) {
+      status.innerHTML = "Ruim"
+    }
+
+    if (correct >= 4 && correct <= 6) {
+      status.innerHTML = "Aceitável"
+    }
+
+    if (correct >= 7 && correct <= 8) {
+      status.innerHTML = "Bom"
+    }
+
+    if (correct >= 9 && correct <= 10) {
+      status.innerHTML = "Ótimo"
+    }
 }
+
+tryAgain.addEventListener('click', () => {
+  location.reload();
+});
 
 
 for(let i = 0; i < quizOptions.length; i++) {
@@ -88,7 +115,7 @@ for(let i = 0; i < quizOptions.length; i++) {
 
 function loadQuestion() {
     if (quizParams === "1") {
-        if(quizData.programming[currentQuestion]) {
+      if(quizData.programming[currentQuestion]) {
             quizQuestion.innerHTML = quizData.programming[currentQuestion].question;
             loadOptions(quizOptions, quizData, "programming");
             return true;
@@ -99,24 +126,32 @@ function loadQuestion() {
       
 
     if (quizParams === "2") {
-        quizQuestion.innerHTML = quizData.conhecimentos[currentQuestion].question;
-        loadOptions(quizOptions, quizData, "conhecimentos");
-        return true;
+      if(quizData.conhecimentos[currentQuestion]) {
+          quizQuestion.innerHTML = quizData.conhecimentos[currentQuestion].question;
+          loadOptions(quizOptions, quizData, "conhecimentos");
+        } else {
+          return mostResults();
+        }
     } 
 
     if (quizParams === "3") {
+      if(quizData.games[currentQuestion]) {
         quizQuestion.innerHTML = quizData.games[currentQuestion].question;
         loadOptions(quizOptions, quizData, "games");
-        return true;
+      } else {
+        return mostResults();
+      }
+        
     } 
 
     if (quizParams === "4") {
+      if(quizData.science[currentQuestion]) {
         quizQuestion.innerHTML = quizData.science[currentQuestion].question;
         loadOptions(quizOptions, quizData, "science");
-        return true;
+      } else {
+        return mostResults();
+      }
     } 
-
-    return false;
 }
 
 loadQuestion();
