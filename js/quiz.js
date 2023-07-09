@@ -44,7 +44,7 @@ const getCorrectAnswer = () => {
       return quizData.games[currentQuestion].answer;
     } 
     if (quizParams === "4") {
-      return quizData.science[currentQuestion].answer;
+      return quizData.sports[currentQuestion].answer;
     }
   
     return null;
@@ -156,9 +156,9 @@ function loadQuestion() {
     } 
 
     if (quizParams === "4") {
-      if(quizData.science[currentQuestion]) {
-        quizQuestion.innerHTML = quizData.science[currentQuestion].question;
-        loadOptions(quizOptions, quizData, "science");
+      if(quizData.sports[currentQuestion]) {
+        quizQuestion.innerHTML = quizData.sports[currentQuestion].question;
+        loadOptions(quizOptions, quizData, "sports");
         return true;
       } else {
         return mostResults();

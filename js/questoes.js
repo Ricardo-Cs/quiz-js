@@ -69,14 +69,57 @@ export const quizData = {
     ],
     conhecimentos: [
         {
-            question: "Questão de conhecimentos gerais número 1",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 1
+            question: "Qual é o idioma oficial da China?",
+            options: ["Chinês", "Mandarim", "Japonês", "Coreano"],
+            answer: "Mandarim"
         },
         {
-            question: "Questão de conhecimentos gerais número 2",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 3
+            question: 'Quem é o autor da famosa frase "Penso, logo existo"?',
+            options: ["Platão", "Sócrates", "René Descartes", "Tales de Mileto"],
+            answer: "René Descartes"
+        },
+        {
+            question: "Austrália, Espanha, Argentina e Bélgica. Qual a capital desses países, respectivamente?",
+            options: ["Sydney, Barcelona, Buenos Aires, Bruxelas", 
+                      "Melbourne, Barcelona, Santa Cruz, Bruges",
+                      "Canberra, Madrid, Buenos Aires, Bruxelas", 
+                      "Sydney, Madrid, Santa Cruz, Bruges"],
+            answer: "Canberra, Madrid, Buenos Aires, Bruxelas"
+        },
+        {
+            question: "Quais foram os anos de início e término do período da Guerra Fria?",
+            options: ["1947 e 1991", "1943 e 1997", "1951 e 1990", "1941 e 1990"],
+            answer: "1947 e 1991"
+        },
+        {
+            question: "Qual é o maior deserto do mundo?",
+            options: ["Antártida", "Deserto do Saara", "Tundra do Ártico", "Deserto de Gobi"],
+            answer: "Antártida"
+        },
+        {
+            question: "Qual é o maior estado em área territorial do Brasil?",
+            options: ["Pará", "Mato Grosso", "Amazonas", "Minas Gerais"],
+            answer: "Amazonas"
+        },
+        {
+            question: "Qual é o nome da primeira mulher a ganhar o Prêmio Nobel?",
+            options: ["Ana Curie", "Sofia Nobel", "Marie Antoinette", "Marie Curie"],
+            answer: "Marie Curie"
+        },
+        {
+            question: "Qual é o país que sediou a Copa do Mundo de Futebol de 2018?",
+            options: ["Qatar", "Alemanha", "Rússia", "Estados Unidos"],
+            answer: "Rússia"
+        },
+        {
+            question: 'Quem foi o autor(a) da obra literária "Frankenstein',
+            options: ["Mary Shelley", "H.P Lovecraft", "Edgar Allan Poe", "Anne Rice"],
+            answer: "Mary Shelley"
+        },
+        {
+            question: "Qual o nome da linha imaginária traçada horizontalmente e que divide a terra nos hemisférios Norte e Sul?",
+            options: ["Trópico de Capricórnio", "Meridiano de Greenwich", "Linha do Equador", "Trópico de Câncer"],
+            answer: "Linha do Equador"
         }
     ],
     games: [
@@ -131,16 +174,56 @@ export const quizData = {
             answer: "Charmander"
         }
     ],
-    science: [
+    sports: [
         {
-            question: "Questão de ciências número 1",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 0
+            question: "Qual é o jogador de basquete de detém o record de mais pontos marcados em uma partida?",
+            options: ["Wilt Chamberlain", "Michael Jordan", "Lebron James", "Kareem Abdul-Jabbar"],
+            answer: "Wilt Chamberlain"
         },
         {
-            question: "Questão de ciências número 2",
-            options: ["Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4"],
-            answer: 3
-        }
+            question: "Qual o clube de futebol que tem mais títulos da UEFA Champions League depois do Real Madrid?",
+            options: ["Milan", "Barcelona", "Bayern de Munique", "Liverpool"],
+            answer: "Milan"
+        },
+        {
+            question: "Qual o clube de futebol que tem mais títulos da Libertadores?",
+            options: ["Boca Juniors", "Independiente", "River Plate", "Flamengo"],
+            answer: "Independiente"
+        },
+        {
+            question: "Quantas medalhas ao total o Ex-Nadador Michael Phelps ganhou ao longo de sua carreira?",
+            options: ["23", "18", "36", "28"],
+            answer: "28"
+        },
+        {
+            question: "Quantas vezes Pelé foi campeão da Copa do Mundo?",
+            options: ["3", "4", "2", "Nenhuma das respostas"],
+            answer: "3"
+        },
+        {
+            question: "Quem é o boxeador que tem o record de mais números de nocautes?",
+            options: ["Mike Tyson", "Floyd Mayweather", "Archie Moore", "Muhammad Ali"],
+            answer: "Archie Moore"
+        },
+        {
+            question: "Entre os times campeôes da NBA, o primeiro lugar está empatado entre dois times, ambos com 17 títulos, quais são esses times?",
+            options: ["Warriors e Lakers", "Lakers e Celtic", "Warriors e Pistons", "Bulls e Bucks"],
+            answer: "Lakers e Celtic"
+        },
+        {
+            question: "Onde foi sediado as Olimpíadas de 2020 (2021)?",
+            options: ["Tóquio, Japão", "Sydney, Austrália", "Paris, França", "Nova York, Estados Unidos"],
+            answer: "Tóquio, Japão"
+        },
+        {
+            question: "Qual desses esportes NÃO é um esporte olímpico?",
+            options: ["Canoagem slalom", "Skate", "Futsal", "Taekwondo"],
+            answer: "Futsal"
+        },
+        {
+            question: "Quantas bolas de ouro o jogador argentino Lionel Messi tem atualmente? (07/2023)",
+            options: ["7", "6", "5", "8"],
+            answer: "7"
+        },
     ]
 }
