@@ -8,14 +8,10 @@ const startQuiz = (quizNumber) => {
     window.location = `./quiz.html?quiz=${quizNumber}`;
 };
 
-startQuizButton[0].addEventListener('click', () => startQuiz(1));
-startQuizDiv[0].addEventListener('click', () => startQuiz(1));
+startQuizButton.forEach((button, index) => {
+    button.addEventListener("click", () => startQuiz(index + 1));
+});
 
-startQuizButton[1].addEventListener('click', () => startQuiz(2));
-startQuizDiv[1].addEventListener('click', () => startQuiz(2));
-
-startQuizButton[2].addEventListener('click', () => startQuiz(3));
-startQuizDiv[2].addEventListener('click', () => startQuiz(3));
-
-startQuizButton[3].addEventListener('click', () => startQuiz(4));
-startQuizDiv[3].addEventListener('click', () => startQuiz(4));
+startQuizDiv.forEach((div, index) => {
+    div.addEventListener("click", () => startQuiz(index + 1));
+});

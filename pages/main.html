@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz | Home</title>
     <link rel="shortcut icon" href="../img/favicon.svg">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/main-page.js" defer></script>
@@ -12,7 +12,15 @@
 
 <body>
     <header>
-        <span>Quizes</span>
+        <span id="logo">Quizzz</span>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./main.html" class="active">Quizes</a></li>
+                <li><a href="./results.html">Resultados</a></li>
+            </ul>
+        </nav>
 
         <div class="redes-sociais">
             <a href="https://github.com/Ricardo-Cs" target="_blank">
@@ -34,35 +42,35 @@
     <main class="main-page">
         <h2 class="main-page-title">Olá, <span player-name></span>! Escolha o quiz que você deseja fazer abaixo.</h2>
 
-        <div class="all-quizes">
-            <div class="quiz">
+        <ul class="all-quizes">
+            <li class="quiz">
                 <img src="../img/programming.jpg" alt="Imagem decorativa para quiz de programação" class="quiz-img">
                 <h4>Programação</h4>
                 <p>Você é um dev? Teste seus conhecimentos em programação nesse quiz.</p>
                 <button class="start-quiz">Iniciar Quiz</button>
-            </div>
+            </li>
 
-            <div class="quiz">
+            <li class="quiz">
                 <img src="../img/world.jpg" alt="Imagem decorativa para quiz de conhecimentos gerais" class="quiz-img">
                 <h4>Conhecimentos gerais</h4>
                 <p>Veja o que você sabe sobre assuntos diversos do nosso mundo.</p>
                 <button class="start-quiz">Iniciar Quiz</button>
-            </div>
+            </li>
 
-            <div class="quiz">
+            <li class="quiz">
                 <img src="../img/games.jpg" alt="Imagem decorativa para quiz de jogos" class="quiz-img">
                 <h4>Jogos</h4>
                 <p>Um quiz feito para quem sabe sobre jogos no geral.</p>
                 <button class="start-quiz">Iniciar Quiz</button>
-            </div>
+            </li>
 
-            <div class="quiz">
+            <li class="quiz">
                 <img src="../img/sports.jpg" alt="Imagem decorativa para quiz de esportes" class="quiz-img">
                 <h4>Esportes</h4>
                 <p>Quiz para quem gosta/sabe de esportes.</p>
                 <button class="start-quiz">Iniciar Quiz</button>
-            </div>
-        </div>
+            </li>
+        </ul>
     </main>
 </body>
 

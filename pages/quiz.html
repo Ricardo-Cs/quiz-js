@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz | Teste</title>
+    <title></title>
     <link rel="shortcut icon" href="../img/favicon.svg">
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/quiz.js" type="module" defer></script>
+    <script src="../js/questoes.js" defer></script>
+    <script src="../js/quiz.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="../pages/main.html">Quizes</a>
+        <span id="logo">Quizzz</span>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./main.html">Quizes</a></li>
+                <li><a href="./results.html">Resultados</a></li>
+            </ul>
+        </nav>
 
         <div class="redes-sociais">
             <a href="https://github.com/Ricardo-Cs" target="_blank">
@@ -48,8 +57,9 @@
             <div class="finish-quiz-content">
                 <h2> * QUIZ FINALIZADO * </h2>
                 <p>Você acertou <span id="correct-answers"></span> questões!</p>
-                <p>Status: <span id="status"></span></p>
+                <p>Resultado: <span id="status"></span></p>
                 <span id="try-again">Tente novamente</span>
+                <span id="back-home">Voltar ao Início</span>
             </div>
         </section>
     </main>
